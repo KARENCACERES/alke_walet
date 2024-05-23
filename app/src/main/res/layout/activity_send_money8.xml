@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".view.send_money">
+
+
+    <TextView
+        android:id="@+id/enviar_dinero7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/jua"
+        android:text="@string/btn_env_din"
+        android:textColor="@color/negro"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_volver"
+        android:layout_width="52dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/back_icon"
+        android:drawableTint="@color/negro"
+        app:layout_constraintEnd_toStartOf="@+id/enviar_dinero7"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/yara_enviar"
+        android:layout_width="245dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enviar_dinero7"
+        app:srcCompat="@drawable/yara_enviar" />
+
+    <ImageView
+        android:id="@+id/seccion_ingresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yara_enviar"
+        app:srcCompat="@drawable/cantidad_a_transferir" />
+
+    <ImageView
+        android:id="@+id/notas_transferencia9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seccion_ingresar"
+        app:srcCompat="@drawable/notas_de_transferencias" />
+
+    <Button
+        android:id="@+id/btn_enviar_dinero"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/verde"
+        android:drawableLeft="@drawable/send_icon"
+        android:drawableTint="@color/negro"
+        android:text="@string/btn_env_din"
+        android:textAlignment="center"
+        android:layout_marginBottom="40dp"
+        android:textColor="@color/negro"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

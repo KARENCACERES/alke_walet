@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:background="@drawable/fondo_felcha"
+    tools:context=".view.signup_page">
+
+    <!-- titulo -->
+    <TextView
+        android:id="@+id/titulo_p4"
+        android:layout_width="314dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/jua"
+        android:text="@string/titulo_registro_p4"
+        android:textColor="@color/negro"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+    <!-- nombre -->
+    <TextView
+        android:id="@+id/nombre_form"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/jua"
+        android:text="@string/nombre"
+        android:textColor="@color/negro"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_p4" />
+
+    <!-- input nombre -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        app:hintEnabled="false"
+        app:layout_constraintStart_toStartOf="@id/nombre_form"
+        app:layout_constraintTop_toBottomOf="@id/nombre_form">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jua"
+            android:backgroundTint="@color/azul"
+            android:hint="@string/ing_nombre"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/material_dynamic_neutral80" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--apellido -->
+    <TextView
+        android:id="@+id/apellido_form"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/jua"
+        android:text="@string/apellido"
+        android:textColor="@color/negro"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputNombre" />
+
+    <!--imput apellido con material desing -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputApellido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        app:hintEnabled="false"
+        app:layout_constraintStart_toStartOf="@id/apellido_form"
+        app:layout_constraintTop_toBottomOf="@id/apellido_form">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jua"
+            android:backgroundTint="@color/azul"
+            android:hint="@string/ing_apellido"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/material_dynamic_neutral80" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--email -->
+    <TextView
+        android:id="@+id/email_form"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/jua"
+        android:text="@string/email_p3_4"
+        android:textColor="@color/negro"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputApellido" />
+
+    <!--imput email con material desing -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        app:hintEnabled="false"
+        app:layout_constraintStart_toStartOf="@id/email_form"
+        app:layout_constraintTop_toBottomOf="@id/email_form">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jua"
+            android:backgroundTint="@color/azul"
+            android:hint="@string/ing_apellido"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/material_dynamic_neutral80" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--contraseña -->
+    <TextView
+        android:id="@+id/contraseña2_form"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/jua"
+        android:text="@string/contrasena_p3_4"
+        android:textColor="@color/negro"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputEmail" />
+
+    <!--imput contraseña con material desing -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputContraseña2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        app:hintEnabled="false"
+        app:layout_constraintStart_toStartOf="@id/contraseña2_form"
+        app:layout_constraintTop_toBottomOf="@id/contraseña2_form">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jua"
+            android:drawableEnd="@drawable/eye"
+            android:backgroundTint="@color/azul"
+            android:hint="@string/ing_contraseña_p3_4"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/material_dynamic_neutral80" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Reingreso_contraseña -->
+    <TextView
+        android:id="@+id/re_contraseña2_form"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/jua"
+        android:text="@string/Re_ing_contraseña_p3_4"
+        android:textColor="@color/negro"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputContraseña2" />
+
+    <!--imput reingreso contraseña con material desing -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputReContraseña2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        app:hintEnabled="false"
+        app:layout_constraintStart_toStartOf="@id/re_contraseña2_form"
+        app:layout_constraintTop_toBottomOf="@id/re_contraseña2_form">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jua"
+            android:drawableEnd="@drawable/eye"
+            android:backgroundTint="@color/azul"
+            android:hint="@string/ing_contraseña_p3_4"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/material_dynamic_neutral80" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/button_crear_cta"
+        android:layout_width="338dp"
+        android:layout_height="52dp"
+        android:backgroundTint="@color/azul"
+        android:text="@string/btn_crear_cta"
+        app:layout_constraintBottom_toTopOf="@+id/button_ya_tiene_cta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_ya_tiene_cta"
+        android:layout_width="338dp"
+        android:layout_height="52dp"
+        android:backgroundTint="@color/blanco"
+        android:fontFamily="@font/jua"
+        android:text="@string/btn_tiene_cta"
+        android:textColor="@color/azul"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

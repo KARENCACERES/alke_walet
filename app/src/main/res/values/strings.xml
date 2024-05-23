@@ -1,0 +1,60 @@
+<resources>
+
+    //Botones//
+    <string name="btn_crea_cta">Crear cuenta nueva</string>
+    <string name="btn_tiene_cta">Ya tiene cuenta?</string>
+    <string name="btn_crear_cta">Crear cuenta</string>
+    <string name="btn_env_din">Enviar Dinero</string>
+    <string name="btn_rec_din">Recibir Dinero</string>
+    <string name="btn_ing_din">Ingresar Dinero</string>
+    <string name="btn_Login_p3">Login</string>
+    <string name="btn_olv_cont_p3_4">Olvidaste tu contraseña?</string>
+
+    //Titulos//
+    <string name="app_name">alke_wallet</string>
+    <string name="logo_nombre">Alke Wallet</string>
+    <string name="titulo_log">Logea y empieza a transferir!</string>
+    <string name="inicio_p5">Inicio</string>
+    <string name="perfil_p7">Mi perfil</string>
+    <string name="titulo_registro_p4">Registrarse y empezar a transferir</string>
+
+    //Formularios//
+    <string name="email_p3_4">Email</string>
+    <string name="ing_email_p3_4">Ingresar tu email</string>
+    <string name="contrasena_p3_4">Contraseña</string>
+    <string name="ing_contraseña_p3_4">Ingresar tu contraseña</string>
+    <string name="Re_ing_contraseña_p3_4">Reingresar contraseña</string>
+    <string name="nombre">Nombre</string>
+    <string name="ing_nombre">Ingresar nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="ing_apellido">Ingresar apellido</string>
+    <string name="email">Email</string>
+    <string name="ing_email">Ingresar Email</string>
+    <string name="can_transferir">Cantidad a transferir</string>
+    <string name="transferencia1">12.50</string>
+    <string name="can_ingresar">Cantidad a ingresar</string>
+    <string name="transferencia">20.00</string>
+    <string name="Not_transf">Notas de transferencia</string>
+    <string name="agre_Not_transf">Agregar notas de transferencia(opcional)</string>
+
+    //Otros//
+    <string name="slogan_lug_p2">El lugar más seguro para tu dinero</string>
+    <string name="amanda_p5_6">Hola Amanda!</string>
+    <string name="balance">Balance Total</string>
+    <string name="saldo_total">$124.57</string>
+    <string name="ult_trans_p5_6">Últimas transacciones</string>
+    <string name="Yara_Khali">Yara_Khalil</string>
+    <string name="Yara_correo">yara_khalil@gmail.com</string>
+    <string name="Fecha">Ot 14, 10:24 AM</string>
+    <string name="monto_trans">-$15.00</string>
+    <string name="amanda_alk">Amanda Alkemy!</string>
+    <string name="informacion">Mi información</string>
+    <string name="tarjetas">Mis tarjetas</string>
+    <string name="opciones">Opciones</string>
+    <string name="cen_ayu">Centro de Ayuda</string>
+    <string name="Reem_Khaled">Reem Khaled</string>
+    <string name="Reem_correo">reem_1993@gmail.com</string>
+
+
+
+</resources>

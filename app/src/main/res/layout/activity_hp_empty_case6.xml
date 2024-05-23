@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.h_p_empty_case">
+
+    <ImageView
+        android:id="@+id/background6"
+        android:layout_width="match_parent"
+        android:layout_height="285dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background_celeste_azul" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_margin="20dp"
+        tools:layout_editor_absoluteX="30dp">
+
+
+        <Button
+            android:id="@+id/btn_inicio6_perfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/jua"
+            android:text="@string/inicio_p5"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textAlignment="textStart"
+            android:background="@android:color/transparent"
+            app:drawableEndCompat="@drawable/foto_titular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/holaAmanda6"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/jua"
+            android:text="@string/amanda_p5_6"
+            android:textColor="@color/material_on_background_disabled"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/btn_inicio6_perfil" />
+
+        <TextView
+            android:id="@+id/balance6"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/jua"
+            android:text="@string/balance"
+            android:textColor="@color/blanco"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/holaAmanda6" />
+
+        <TextView
+            android:id="@+id/saldo6"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:drawableEnd="@drawable/notifications__icon"
+            android:fontFamily="@font/jua"
+            android:text="@string/saldo_total"
+            android:textColor="@color/blanco"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/balance6" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/menuLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="310dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <Button
+                android:id="@+id/EnviarDineroButton"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="@color/verde"
+                android:drawableLeft="@drawable/send_icon"
+                android:drawableTint="@color/negro"
+                android:text="@string/btn_env_din"
+                android:textColor="@color/negro" />
+
+            <Button
+                android:id="@+id/IngresarDineroButton"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/azul"
+                android:drawableLeft="@drawable/request_icon"
+                android:drawableTint="@color/blanco"
+                android:text="@string/btn_ing_din"
+                tools:layout_editor_absoluteX="224dp"
+                tools:layout_editor_absoluteY="301dp" />
+
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/ult_transacciones6"
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/jua"
+        android:text="@string/ult_trans_p5_6"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/menuLinearLayout" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuLinearLayout"
+        app:srcCompat="@drawable/illustration" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="#808080"
+        android:fontFamily="@font/jua"
+        android:text="No hay transacciones registradas!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

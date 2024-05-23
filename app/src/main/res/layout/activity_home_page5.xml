@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".view.home_page">
+
+    <ImageView
+        android:id="@+id/background5"
+        android:layout_width="415dp"
+        android:layout_height="285dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background_celeste_azul" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_margin="30dp">
+
+
+        <Button
+            android:id="@+id/inicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/jua"
+            android:text="@string/inicio_p5"
+            android:textAlignment="textStart"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:drawableEndCompat="@drawable/foto_titular" />
+
+        <TextView
+            android:id="@+id/holaAmanda"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/jua"
+            android:text="@string/amanda_p5_6"
+            android:textColor="@color/material_on_background_disabled"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/inicio"/>
+
+        <TextView
+            android:id="@+id/balance"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/jua"
+            android:text="@string/balance"
+            android:textColor="@color/blanco"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/holaAmanda"/>
+
+        <TextView
+            android:id="@+id/saldo"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:drawableEnd="@drawable/notifications__icon"
+            android:fontFamily="@font/jua"
+            android:text="@string/saldo_total"
+            android:textColor="@color/blanco"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/balance" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/menuLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="310dp"
+        android:layout_marginStart="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <Button
+            android:id="@+id/noticiasButton"
+            android:layout_marginStart="20dp"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/verde"
+            android:textColor="@color/negro"
+            android:text="@string/btn_env_din"
+            android:drawableLeft="@drawable/send_icon"
+            android:drawableTint="@color/negro"/>
+
+        <Button
+            android:id="@+id/estadoButton"
+            android:layout_marginStart="10dp"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/azul"
+            android:text="@string/btn_ing_din"
+            tools:layout_editor_absoluteX="224dp"
+            tools:layout_editor_absoluteY="301dp"
+            android:drawableLeft="@drawable/request_icon"
+            android:drawableTint="@color/blanco"/>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="285dp">
+
+        <TextView
+            android:id="@+id/ult_transacciones"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="384dp"
+            android:fontFamily="@font/jua"
+            android:text="@string/ult_trans_p5_6"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.197"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/yara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.242"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ult_transacciones"
+            app:srcCompat="@drawable/group_1_png" />
+
+        <ImageView
+            android:id="@+id/Sara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.242"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/yara"
+            app:srcCompat="@drawable/user_02_png" />
+
+        <ImageView
+            android:id="@+id/ahmad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.242"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/Sara"
+            app:srcCompat="@drawable/user_03_png" />
+
+        <ImageView
+            android:id="@+id/reem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.242"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ahmad"
+            app:srcCompat="@drawable/user_04_png" />
+
+        <ImageView
+            android:id="@+id/hiba"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.242"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/reem"
+            app:srcCompat="@drawable/user_05_png" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
