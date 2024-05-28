@@ -20,7 +20,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="280dp"
-        android:layout_margin="30dp">
+        android:layout_margin="30dp"
+        tools:ignore="MissingConstraints">
 
 
         <Button
@@ -136,63 +137,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/yara"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_list_user"
+            android:layout_width="409dp"
+            android:layout_height="305dp"
+            android:layout_marginTop="42dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.242"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/ult_transacciones"
-            app:srcCompat="@drawable/group_1_png" />
-
-        <ImageView
-            android:id="@+id/Sara"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.242"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/yara"
-            app:srcCompat="@drawable/user_02_png" />
-
-        <ImageView
-            android:id="@+id/ahmad"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.242"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/Sara"
-            app:srcCompat="@drawable/user_03_png" />
-
-        <ImageView
-            android:id="@+id/reem"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.242"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/ahmad"
-            app:srcCompat="@drawable/user_04_png" />
-
-        <ImageView
-            android:id="@+id/hiba"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.242"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/reem"
-            app:srcCompat="@drawable/user_05_png" />
+            app:layout_constraintTop_toTopOf="@+id/ult_transacciones" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

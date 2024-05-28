@@ -1,11 +1,17 @@
 package caceres.karen.alke_wallet.view
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
+import caceres.karen.alke_wallet.databinding.ActivityHomePage5Binding
 import caceres.karen.alke_wallet.databinding.ActivityLoginPage3Binding
+import caceres.karen.alke_wallet.viewmodel.LoginViewModel
 
 class login_page : AppCompatActivity() {
 
@@ -18,6 +24,33 @@ class login_page : AppCompatActivity() {
         binding = ActivityLoginPage3Binding.inflate(layoutInflater)
         //vamos a setear la vista a mostrar
         setContentView(binding.root)
+
+        //val signup = findViewById<TextView>(R.id.lp_crear_cuenta)
+
+        //Vamos a configurar el ViewModel
+        ViewModel = ViewModelProvider(this).get(LoginViewModel::class.java)
+
+
+        //Configurando el onClick al dar click sobre el btn "Crear una nueva cuenta", salte a la activity Signup Page
+        binding.btnCrearCta.setOnClickListener {
+            //Vamos a rescartar la informacion que ingreso el usuario
+            var correoIngresado = binding.correoIngresado.text.toString()
+            var passwordIngresado = binding.contraseAIngresada.text.toString()
+
+            //vamos a guardar el correo en los sharedPreferences
+            ViewModel.hacerLogin(correoIngresado, passwordIngresado)
+        }
+
+        //Se configura el observador que va a estar observando al sujeto "loginResultLiveData"
+        ViewModel.loginResultLiveData.observe(this) { loginOk ->
+            if (loginOk == true) {
+                val irMenuPrincipal = Intent(this, ActivityHomePage5Binding::class.java)
+                startActivity(irMenuPrincipal)
+            } else {
+                Toast.makeText(this, "Datos Invalidos", Toast.LENGTH_LONG).show()
+            }
+        }
+
 
     }
 }

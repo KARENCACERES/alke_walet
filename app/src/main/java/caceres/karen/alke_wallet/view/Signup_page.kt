@@ -1,5 +1,6 @@
 package caceres.karen.alke_wallet.view
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -20,5 +21,13 @@ class signup_page : AppCompatActivity() {
 
         //vamos a setear la vista a mostrar
         setContentView(binding.root)
+
+
+        binding.buttonCrearCta.setOnClickListener {
+            val AbrirPantalla3 = Intent(this, login_page::class.java)
+            startActivity(AbrirPantalla3)
+            finish()
+        }
+
     }
 }
