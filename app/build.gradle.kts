@@ -38,8 +38,18 @@ android {
 
     }
 }
-
 dependencies {
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation(libs.androidx.lifecycle.livedata.ktx)
+
+    // Implementando RecyclerView
+    implementation(libs.androidx.recyclerview)
+// Implemento Picasso para imagenes
+    implementation("com.squareup.picasso:picasso:2.8")
+    // Implemento Retrofit para acceso a apis
+    implementation("com.squareup.retrofit2:retrofit:2.11.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.11.0")
+
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
@@ -50,3 +60,4 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
+
