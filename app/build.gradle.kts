@@ -41,17 +41,23 @@ android {
     }
 }
 dependencies {
-    implementation(libs.androidx.lifecycle.viewmodel.ktx)
-    implementation(libs.androidx.lifecycle.livedata.ktx)
 
     // Implementando RecyclerView
     implementation(libs.androidx.recyclerview)
-// Implemento Picasso para imagenes
-    implementation("com.squareup.picasso:picasso:2.8")
-    // Implemento Retrofit para acceso a apis
+//implementando librerias para proyecto
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
     implementation("com.squareup.retrofit2:retrofit:2.11.0")
     implementation("com.squareup.retrofit2:converter-gson:2.11.0")
 
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1")
+    implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.5.1")
+
+    implementation ("com.squareup.picasso:picasso:2.8")
+
+    implementation ("com.github.bumptech.glide:glide:4.16.0")
+    annotationProcessor ("com.github.bumptech.glide:compiler:4.15.1")
+
+    implementation ("org.jetbrains.kotlin:kotlin-stdlib:1.9.20")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

@@ -1,6 +1,7 @@
 package caceres.karen.alke_wallet.model
 
-data class User(
+data class UserResponse(
+    val id: Int,
     val firstName: String,
     val lastName: String,
     val email: String,
