@@ -9,12 +9,12 @@ import androidx.room.PrimaryKey
 data class UsuarioEntidad(
     //aca van los campos que voy a guardar en la base de datos
     @PrimaryKey(autoGenerate = true)
+    val id: Int = 0,
+    val id_api: Int,
     val firstName: String,
     val lastName: String,
     val email: String,
-    val password: String,
-    val roleID: Long,
-    val points: Long
+    val password: String
 ){
     override fun toString(): String {
         return this.firstName

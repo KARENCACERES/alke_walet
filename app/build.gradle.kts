@@ -61,6 +61,12 @@ dependencies {
 //Picasso
     implementation ("com.squareup.picasso:picasso:2.8")
 
+    //Para los test
+    testImplementation("junit:junit:4.13.2")
+    testImplementation("org.mockito:mockito-core:3.12.4")
+    testImplementation("com.squareup.okhttp3:mockwebserver:4.9.1")
+
+
 
 //estas  no me acuerdo para que eran?
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1")
