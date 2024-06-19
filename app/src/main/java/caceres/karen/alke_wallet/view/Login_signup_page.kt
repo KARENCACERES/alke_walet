@@ -30,10 +30,16 @@ class login_signup_page : AppCompatActivity() {
         binding.buttonCtaP2.setOnClickListener {
             val abrirpantallaloginPage = Intent(this, signup_page::class.java)
             startActivity(abrirpantallaloginPage)
+        }
+        //se declara la variable para el boton y su interaccion
+        binding.btnCrearCta.setOnClickListener {
+            val abrirpantallaloginPage = Intent(this, home_page::class.java)
+            startActivity(abrirpantallaloginPage)
 
         }
     }
-}
+    }
+
 
             /**Se declara(nombra) la boton como una variable
             val btn_crear_cta = findViewById<Button>(R.id.button_cta_p2)

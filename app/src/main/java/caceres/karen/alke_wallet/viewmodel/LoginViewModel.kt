@@ -64,7 +64,7 @@ class LoginViewModel(application: Application) : AndroidViewModel(application) {
 
     }
 
-    //funcion para obtener los datos del uisuario
+    //funcion para obtener los datos del usuario
     fun getUserData() {
         loadingLiveData.postValue(true) // Indicar inicio de carga
 

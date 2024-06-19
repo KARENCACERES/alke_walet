@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "989417239785",
+    "project_id": "alke-wallet",
+    "storage_bucket": "alke-wallet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:989417239785:android:1f208a8f8d1032a9f12c78",
+        "android_client_info": {
+          "package_name": "caceres.karen.alke_wallet"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_yLbch6uuJyokCiI7G_q6vxBMUm6O5wM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

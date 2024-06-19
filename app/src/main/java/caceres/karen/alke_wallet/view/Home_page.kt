@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import caceres.karen.alke_wallet.R
-import caceres.karen.alke_wallet.adapter.ListTransactionAdapter
+import caceres.karen.alke_wallet.view.adapter.ListTransactionAdapter
 import caceres.karen.alke_wallet.databinding.ActivityHomePage5Binding
 import caceres.karen.alke_wallet.model.Transaction
 

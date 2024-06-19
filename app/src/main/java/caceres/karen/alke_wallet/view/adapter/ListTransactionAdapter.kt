@@ -1,4 +1,4 @@
-package caceres.karen.alke_wallet.adapter
+package caceres.karen.alke_wallet.view.adapter
 
 import android.view.LayoutInflater
 import android.view.View
